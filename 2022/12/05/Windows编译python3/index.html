@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wcyfszx.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="@TOC发布时间：2022.5，注意时效性系统环境：windows 10，vs 2019 buildtools文末附下载 一、下载安装Git，7ZipGit for Windows，下载最新版就行7Zip 二、下载python源码下载地址，随便下载哪个都行我下载的是Python-3.8.13.tgz使用7zip解压压缩包，Windows自己好像不能解压tgz 三、修改python源码打开PCbui">
+<meta property="og:type" content="article">
+<meta property="og:title" content="悠然的峰&#39;s 技术博客">
+<meta property="og:url" content="https://wcyfszx.github.io/2022/12/05/Windows%E7%BC%96%E8%AF%91python3/index.html">
+<meta property="og:site_name" content="悠然的峰&#39;s 技术博客">
+<meta property="og:description" content="@TOC发布时间：2022.5，注意时效性系统环境：windows 10，vs 2019 buildtools文末附下载 一、下载安装Git，7ZipGit for Windows，下载最新版就行7Zip 二、下载python源码下载地址，随便下载哪个都行我下载的是Python-3.8.13.tgz使用7zip解压压缩包，Windows自己好像不能解压tgz 三、修改python源码打开PCbui">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2cd6ea31a95440968a4d9306679d6813.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/a4510acdc3dc475bad54bbbd37b03d49.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/b011a2c9882a49f29c268467707881c7.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/341cffd1a5ec44d0a6db75d5d814a84e.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/df8d2ce60dd74804b3dbbe834fa1d4df.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/366950cb01e645408362340bca6dcdc7.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7599a3bc5eb44acb8e8f1be82aae1df8.png#pic_center">
+<meta property="article:published_time" content="2022-12-05T00:13:50.502Z">
+<meta property="article:modified_time" content="2022-12-04T23:51:57.186Z">
+<meta property="article:author" content="悠然的峰">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2cd6ea31a95440968a4d9306679d6813.png#pic_center">
+
+
+<link rel="canonical" href="https://wcyfszx.github.io/2022/12/05/Windows%E7%BC%96%E8%AF%91python3/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wcyfszx.github.io/2022/12/05/Windows%E7%BC%96%E8%AF%91python3/","path":"2022/12/05/Windows编译python3/","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title> | 悠然的峰's 技术博客</title>
+  
+
+
+
+
+
+
+  <script async defer data-website-id="" src=""></script>
+
+  <script defer data-domain="" src=""></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">悠然的峰's 技术博客</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85Git%EF%BC%8C7Zip"><span class="nav-number">1.</span> <span class="nav-text">一、下载安装Git，7Zip</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E4%B8%8B%E8%BD%BDpython%E6%BA%90%E7%A0%81"><span class="nav-number">2.</span> <span class="nav-text">二、下载python源码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E4%BF%AE%E6%94%B9python%E6%BA%90%E7%A0%81"><span class="nav-number">3.</span> <span class="nav-text">三、修改python源码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E7%BC%96%E8%AF%91"><span class="nav-number">4.</span> <span class="nav-text">四、编译</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E5%BB%BA%E7%AB%8Bpython%E5%AE%89%E8%A3%85%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">5.</span> <span class="nav-text">五、建立python安装文件夹</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E4%B8%80%E7%82%B9%E5%B0%8F%E9%81%97%E6%86%BE"><span class="nav-number">6.</span> <span class="nav-text">六、一点小遗憾</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%83%E3%80%81%E5%AE%89%E8%A3%85pip"><span class="nav-number">7.</span> <span class="nav-text">七、安装pip</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">悠然的峰</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wcyfszx.github.io/2022/12/05/Windows%E7%BC%96%E8%AF%91python3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="悠然的峰">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="悠然的峰's 技术博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 悠然的峰's 技术博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-12-05 08:13:50 / 修改时间：07:51:57" itemprop="dateCreated datePublished" datetime="2022-12-05T08:13:50+08:00">2022-12-05</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>@<a href="Windows%E7%BC%96%E8%AF%91python3">TOC</a><br>发布时间：2022.5，注意时效性<br>系统环境：windows 10，vs 2019 buildtools<br>文末附下载</p>
+<h1 id="一、下载安装Git，7Zip"><a href="#一、下载安装Git，7Zip" class="headerlink" title="一、下载安装Git，7Zip"></a>一、下载安装Git，7Zip</h1><p><a target="_blank" rel="noopener" href="https://repo.huaweicloud.com/git-for-windows/">Git for Windows</a>，下载最新版就行<br><a target="_blank" rel="noopener" href="https://www.7-zip.org/">7Zip</a></p>
+<h1 id="二、下载python源码"><a href="#二、下载python源码" class="headerlink" title="二、下载python源码"></a>二、下载python源码</h1><p><a target="_blank" rel="noopener" href="https://repo.huaweicloud.com/python/">下载地址</a>，随便下载哪个都行<br>我下载的是Python-3.8.13.tgz<br>使用7zip解压压缩包，Windows自己好像不能解压tgz<br><img src="https://img-blog.csdnimg.cn/2cd6ea31a95440968a4d9306679d6813.png#pic_center" alt="alt"></p>
+<h1 id="三、修改python源码"><a href="#三、修改python源码" class="headerlink" title="三、修改python源码"></a>三、修改python源码</h1><p>打开PCbuild\get_external.py，加入如下语句</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> ssl</span><br><span class="line">ssl._create_default_https_context = ssl._create_unverified_context</span><br></pre></td></tr></table></figure>
+<p>由于可能会遇到ssl的问题，所以需要修改<br>如图：</p>
+<p><img src="https://img-blog.csdnimg.cn/a4510acdc3dc475bad54bbbd37b03d49.png#pic_center" alt="alt"></p>
+<h1 id="四、编译"><a href="#四、编译" class="headerlink" title="四、编译"></a>四、编译</h1><p>打开x64本机命令提示符，进入PCbuild</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">build.bat <span class="comment"># 编译32位python</span></span><br><span class="line">build.bat -p x64 <span class="comment"># 编译64位python</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/b011a2c9882a49f29c268467707881c7.png#pic_center" alt="alt"><br><img src="https://img-blog.csdnimg.cn/341cffd1a5ec44d0a6db75d5d814a84e.png#pic_center" alt="alt"><br>错误可以忽略<br>测试：输入python即可运行<br><img src="https://img-blog.csdnimg.cn/df8d2ce60dd74804b3dbbe834fa1d4df.png#pic_center" alt="alt"></p>
+<h1 id="五、建立python安装文件夹"><a href="#五、建立python安装文件夹" class="headerlink" title="五、建立python安装文件夹"></a>五、建立python安装文件夹</h1><p>找到一个安装版python的安装目录，目录里有啥就从编译的文件夹里复制出来<br>但注意有一个文件夹叫include，比较坑，不能直接复制，要找到叫<strong>pyconfig.h</strong>这个文件，复制到include文件夹里，再把pydtrace.d文件移除<br>如图：<br><img src="https://img-blog.csdnimg.cn/366950cb01e645408362340bca6dcdc7.png#pic_center" alt="alt"><br>这是我最后的结果：<br><img src="https://img-blog.csdnimg.cn/7599a3bc5eb44acb8e8f1be82aae1df8.png#pic_center" alt="alt"></p>
+<h1 id="六、一点小遗憾"><a href="#六、一点小遗憾" class="headerlink" title="六、一点小遗憾"></a>六、一点小遗憾</h1><p>这里没有编译帮助文档，我试过，但失败了，所以如上图没有Doc文件夹</p>
+<h1 id="七、安装pip"><a href="#七、安装pip" class="headerlink" title="七、安装pip"></a>七、安装pip</h1><p>这里不用使用get-pip.py，可以使用ensurepip</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m ensurepip</span><br></pre></td></tr></table></figure>
+<p>这个pip仍然有点坑，一旦安装后就无法移动该文件夹，否则pip.exe会无法使用<br>但也可以这样用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip</span><br></pre></td></tr></table></figure>
+<hr>
+<p>链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1oe1g5EIncvECQLfA9Gnqng">https://pan.baidu.com/s/1oe1g5EIncvECQLfA9Gnqng</a> 提取码: cjv8 </p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/12/05/Windows%E5%88%B6%E4%BD%9Cchromium%E4%BE%BF%E6%90%BA%E7%89%88/" rel="next" title="">
+                   <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">悠然的峰</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

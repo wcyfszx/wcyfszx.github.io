@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wcyfszx.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta property="og:type" content="website">
+<meta property="og:title" content="悠然的峰&#39;s 技术博客">
+<meta property="og:url" content="https://wcyfszx.github.io/index.html">
+<meta property="og:site_name" content="悠然的峰&#39;s 技术博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="悠然的峰">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wcyfszx.github.io/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>悠然的峰's 技术博客</title>
+  
+
+
+
+
+
+
+  <script async defer data-website-id="" src=""></script>
+
+  <script defer data-domain="" src=""></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">悠然的峰's 技术博客</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">悠然的峰</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://wcyfszx.github.io/2022/12/05/Evolution-Host/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="悠然的峰">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="悠然的峰's 技术博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 悠然的峰's 技术博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/12/05/Evolution-Host/" class="post-title-link" itemprop="url">Evolution-Host</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-12-05 08:20:23 / 修改时间：08:22:56" itemprop="dateCreated datePublished" datetime="2022-12-05T08:20:23+08:00">2022-12-05</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><img src="https://img.dujin.org/uploads/2020/04/Evolution-Host-Free-VPS.png"></p>
+<p>Evolution Host 免费服务器申请页面 <a target="_blank" rel="noopener" href="https://evolution-host.com/free-vps.php">https://evolution-host.com/free-vps.php</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://wcyfszx.github.io/2022/12/05/Windows%E4%B8%8B%E7%BC%96%E8%AF%91%E5%B8%A6fancyindex%E7%9A%84nginx/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="悠然的峰">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="悠然的峰's 技术博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 悠然的峰's 技术博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/12/05/Windows%E4%B8%8B%E7%BC%96%E8%AF%91%E5%B8%A6fancyindex%E7%9A%84nginx/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-12-05 08:13:50 / 修改时间：07:52:46" itemprop="dateCreated datePublished" datetime="2022-12-05T08:13:50+08:00">2022-12-05</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>@<a href="Windows%E4%B8%8B%E7%BC%96%E8%AF%91%E5%B8%A6fancyindex%E7%9A%84nginx">TOC</a><br>系统环境：vs2019 buildtools<br>发布时间：2022.4，注意时效性</p>
+<h2 id="一、准备"><a href="#一、准备" class="headerlink" title="一、准备"></a>一、准备</h2><p>由于要编译64位nginx，以下所有软件均使用64位</p>
+<ol>
+<li>git for windows （用msys2也行）</li>
+<li>strawberryperl <a target="_blank" rel="noopener" href="https://strawberryperl.com/">下载链接</a></li>
+<li>nasm <a target="_blank" rel="noopener" href="https://www.nasm.us/pub/nasm/releasebuilds/2.15.05/win64/nasm-2.15.05-win64.zip">下载链接</a>，解压后把所有可执行文件放在一个目录里，把这个目录加入PATH</li>
+<li>sed <a target="_blank" rel="noopener" href="https://jaist.dl.sourceforge.net/project/gnuwin32/sed/4.2.1/sed-4.2.1-setup.exe">下载链接</a>，安装后把安装目录加入PATH</li>
+<li>下载依赖库：<a target="_blank" rel="noopener" href="http://www.pcre.org/">pcre</a>，<a target="_blank" rel="noopener" href="http://zlib.net/">zlib</a>，<a target="_blank" rel="noopener" href="http://www.openssl.org/">openssl</a>， <a target="_blank" rel="noopener" href="https://github.com/aperezdc/ngx-fancyindex/releases/tag/v0.5.2">ngx-fancyindex</a>，<strong>注意：千万不要下载pcre2！</strong></li>
+</ol>
+<h2 id="二、下载nginx源代码"><a href="#二、下载nginx源代码" class="headerlink" title="二、下载nginx源代码"></a>二、下载nginx源代码</h2><p>看网上有人先下载安装Mercurial再下载源代码，但完全可以直接下载，进入<a target="_blank" rel="noopener" href="http://hg.nginx.org/nginx/tags">链接</a>，点击最上边的那个release，然后点击最左边的<code>zip</code>，我下的是<code>stable-1.20.zip</code><br><img src="https://img-blog.csdnimg.cn/79fc86dfd7df492f957f992f3d5fcb97.png#pic_center" alt="就下载红圈里的"></p>
+<h2 id="三、添加依赖"><a href="#三、添加依赖" class="headerlink" title="三、添加依赖"></a>三、添加依赖</h2><p> 在nginx源代码分别创建 objs\lib 文件夹，并且将下载好的ngx-fancyindex、openssl、pcre、zlib分别解压在lib文件夹下面</p>
+<p>结果如下图：<img src="https://img-blog.csdnimg.cn/93981f284fc64748a72159d49a220f9a.png#pic_center" alt="结果"></p>
+<h2 id="四、生成Makefile"><a href="#四、生成Makefile" class="headerlink" title="四、生成Makefile"></a>四、生成Makefile</h2><p>使用git bash，进入nginx根文件夹，执行<br>auto&#x2F;configure –with-cc&#x3D;cl –builddir&#x3D;objs –prefix&#x3D; –conf-path&#x3D;conf&#x2F;nginx.conf –pid-path&#x3D;logs&#x2F;nginx.pid –http-log-path&#x3D;logs&#x2F;access.log –error-log-path&#x3D;logs&#x2F;error.log –sbin-path&#x3D;nginx.exe –http-client-body-temp-path&#x3D;temp&#x2F;client_body_temp –http-proxy-temp-path&#x3D;temp&#x2F;proxy_temp –http-fastcgi-temp-path&#x3D;temp&#x2F;fastcgi_temp –http-scgi-temp-path&#x3D;temp&#x2F;scgi_temp –http-uwsgi-temp-path&#x3D;temp&#x2F;uwsgi_temp –with-cc-opt&#x3D;-DFD_SETSIZE&#x3D;1024 –with-pcre&#x3D;objs&#x2F;lib&#x2F;pcre-8.45 –with-zlib&#x3D;objs&#x2F;lib&#x2F;zlib-1.2.11 –with-openssl&#x3D;objs&#x2F;lib&#x2F;openssl-1.1.1n –with-select_module –with-http_ssl_module –add-module&#x3D;objs&#x2F;lib&#x2F;ngx-fancyindex-0.5.2<br>如果有依赖库版本不一样的时候，注意更改</p>
+<p><img src="https://img-blog.csdnimg.cn/4eef7bc1519149fd9340660ff23b9764.png#pic_center" alt="alt"><br><img src="https://img-blog.csdnimg.cn/572d52c0e4f546779c777b090387d808.png#pic_center" alt="alt"></p>
+<h2 id="五、处理一些小问题"><a href="#五、处理一些小问题" class="headerlink" title="五、处理一些小问题"></a>五、处理一些小问题</h2><p>修改 nginx\auto\lib\openssl\makefile.msvc 文件，将9行<code>VC-WIN32</code>改为<code>VC-WIN64A</code>，将15行<code>ms\do_ms</code> 改为 <code>ms\do_nasm</code><br>修改 auto\cc\msvc 文件，将83行<code>-W4</code>改为<code>-W3</code>，并将117和119行注释掉</p>
+<h2 id="六、编译"><a href="#六、编译" class="headerlink" title="六、编译"></a>六、编译</h2><p>打开x64提示符，进入nginx根文件夹，执行nmake -f Makefile<br><img src="https://img-blog.csdnimg.cn/45901bc384f9468588a7ed4093c177dc.png#pic_center" alt="alt"><br>等待一段时间后即可编译成功<img src="https://img-blog.csdnimg.cn/6c3c7ec66dbd47edb03ac4334cf93fe3.png#pic_center" alt="alt"><br><img src="https://img-blog.csdnimg.cn/9f6106a3a0334262aec4f38bf116352b.png#pic_center" alt="alt"></p>
+<h2 id="七、执行前准备"><a href="#七、执行前准备" class="headerlink" title="七、执行前准备"></a>七、执行前准备</h2><p>将根目录中的<code>conf</code>、<code>contrib</code>、<code>docs</code>、<code>misc</code>文件夹复制到新文件夹，将objs&#x2F;nginx.exe复制到该文件夹根目录下，新建<code>temp</code>、<code>html</code>文件夹<br>如图：<br><img src="https://img-blog.csdnimg.cn/e32c8da129234993ba01fddfe0b52b69.png#pic_center" alt="在这里插入图片描述"></p>
+<p>开启目录索引：编辑 conf&#x2F;nginx.conf</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">location / &#123;</span><br><span class="line">    autoindex               on;</span><br><span class="line">    autoindex_exact_size    off;</span><br><span class="line">    autoindex_localtime     on;</span><br><span class="line">    charset                 utf-8; # 如果中文有乱码，可配置为：gbk,utf-8</span><br><span class="line">     </span><br><span class="line">    fancyindex              on; # 启用插件</span><br><span class="line">    fancyindex_localtime    on; # 使用本地时间</span><br><span class="line">    fancyindex_exact_size   off; # 是否使用精确的大小，on显示字节，off显示如 M 这种</span><br><span class="line"> </span><br><span class="line">    fancyindex_footer       &quot;/fancy-theme/footer.html&quot;; # 主题页脚文件</span><br><span class="line">    fancyindex_header       &quot;/fancy-theme/header.html&quot;; # 主题头部文件</span><br><span class="line">    fancyindex_ignore       &quot;example.html&quot;; # 忽略显示的文件名称</span><br><span class="line">    fancyindex_ignore       &quot;fancy-theme&quot;;  # 忽略显示的目录</span><br><span class="line">    fancyindex_name_length  255;</span><br><span class="line">    fancyindex_time_format  &quot;%Y-%m-%d %H:%M&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>双击nginx.exe即可运行</p>
+<p>已经编译完的nginx下载链接：</p>
+<p><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Kup0RgInlY7BmnHOxqibBw">https://pan.baidu.com/s/1Kup0RgInlY7BmnHOxqibBw</a> 提取码: vghm</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://wcyfszx.github.io/2022/12/05/Windows%E7%BC%96%E8%AF%91Apache/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="悠然的峰">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="悠然的峰's 技术博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 悠然的峰's 技术博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/12/05/Windows%E7%BC%96%E8%AF%91Apache/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-12-05 08:13:50 / 修改时间：07:52:31" itemprop="dateCreated datePublished" datetime="2022-12-05T08:13:50+08:00">2022-12-05</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>@<a href="Windows%E7%BC%96%E8%AF%91Apache">TOC</a><br>发布时间：2022.5，注意时效性<br>系统环境：windows 10，vs 2019 buildtools</p>
+<h1 id="一、准备"><a href="#一、准备" class="headerlink" title="一、准备"></a>一、准备</h1><ol>
+<li>strawberry perl <a target="_blank" rel="noopener" href="https://strawberryperl.com/">下载地址</a></li>
+<li>ninja <a target="_blank" rel="noopener" href="https://github.com/ninja-build/ninja/releases">下载地址</a></li>
+<li>cmake <a target="_blank" rel="noopener" href="https://cmake.org/download/">下载地址</a></li>
+<li>nasm (用于编译openssl，下载后把目录加进path) <a target="_blank" rel="noopener" href="https://www.nasm.us/pub/nasm/releasebuilds/2.15.05/win64/nasm-2.15.05-win64.zip">下载地址</a></li>
+<li>源码：<a target="_blank" rel="noopener" href="https://www.zlib.net/">zlib</a>，<a target="_blank" rel="noopener" href="https://sourceforge.net/projects/pcre/files/">pcre</a>，<a target="_blank" rel="noopener" href="https://github.com/libexpat/libexpat/releases">expat</a>，<a target="_blank" rel="noopener" href="https://www.openssl.org/source/">openssl</a>，<a target="_blank" rel="noopener" href="https://github.com/google/brotli/releases">brotli</a>，<a target="_blank" rel="noopener" href="https://apr.apache.org/download.cgi">apr</a>，<a target="_blank" rel="noopener" href="https://apr.apache.org/download.cgi">apr-util</a>，<a target="_blank" rel="noopener" href="https://httpd.apache.org/download.cgi">httpd</a><br><img src="https://img-blog.csdnimg.cn/f5cb66326bca48dcb58d251f470056fe.png#pic_center" alt="alt"></li>
+</ol>
+<h1 id="二、编译"><a href="#二、编译" class="headerlink" title="二、编译"></a>二、编译</h1><p>都是在每个源码文件夹中新建一个文件夹，在此目录中执行命令，请自行修改Apache的安装目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> INSTALL=D:\Apache <span class="comment">#请自行修改%INSTALL%变量即Apache安装目录</span></span><br></pre></td></tr></table></figure>
+<h2 id="1-编译zlib"><a href="#1-编译zlib" class="headerlink" title="1. 编译zlib"></a>1. 编译zlib</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake -GNinja -DCMAKE_INSTALL_PREFIX=%INSTALL% -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON ..</span><br><span class="line">ninja <span class="comment">#编译</span></span><br><span class="line">ninja install <span class="comment">#安装</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/42f9794d9f9244818210bbb627143783.png#pic_center" alt="alt"><br><img src="https://img-blog.csdnimg.cn/3852604d87f2402fb907dcc54d1320ae.png#pic_center" alt="alt"></p>
+<h2 id="2-编译pcre"><a href="#2-编译pcre" class="headerlink" title="2. 编译pcre"></a>2. 编译pcre</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake -GNinja -DBUILD_SHARED_LIBS=ON -DPCRE_BUILD_PCRECPP=OFF -DCMAKE_INSTALL_PREFIX=%INSTALL% -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Release ..</span><br><span class="line">ninja</span><br><span class="line">ninja install</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/8f4da640aed446dc9ad348503e6c772a.png#pic_center" alt="alt"><br><img src="https://img-blog.csdnimg.cn/4a79d8470d274bc9835719b9aeb9b3f4.png#pic_center" alt="alt"></p>
+<h2 id="3-编译expat"><a href="#3-编译expat" class="headerlink" title="3. 编译expat"></a>3. 编译expat</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake -GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=%INSTALL% ..</span><br><span class="line">ninja</span><br><span class="line">ninja install</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/8faf5689a706402dbd3f0ce5764c3fca.png#pic_center" alt="在这里插入图片描述"></p>
+<h2 id="4-编译openssl"><a href="#4-编译openssl" class="headerlink" title="4. 编译openssl"></a>4. 编译openssl</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">perl Configure VC-WIN64A --release --prefix=%INSTALL% --openssldir=%INSTALL%\conf enable-camellia no-idea no-mdc2</span><br><span class="line">nmake</span><br><span class="line">nmake install</span><br></pre></td></tr></table></figure>
+<p>会编译很长时间，耐心等待<br><img src="https://img-blog.csdnimg.cn/c1f129ebdfdf4f9d897c1da16f3b31af.png#pic_center" alt="alt"><br><img src="https://img-blog.csdnimg.cn/7d21221ecf744446b08874a3d3abe037.png#pic_center" alt="alt"><br><img src="https://img-blog.csdnimg.cn/3f3083db329a43ac904582523c5247c1.png#pic_center" alt="alt"></p>
+<h2 id="5-编译brotli"><a href="#5-编译brotli" class="headerlink" title="5. 编译brotli"></a>5. 编译brotli</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake -GNinja -DCMAKE_INSTALL_PREFIX=%INSTALL% -DCMAKE_BUILD_TYPE=Release ..</span><br><span class="line">ninja</span><br><span class="line">ninja install</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/430332c27ad34207924ae70b0b84f442.png#pic_center" alt="alt"></p>
+<h2 id="6-编译apr"><a href="#6-编译apr" class="headerlink" title="6. 编译apr"></a>6. 编译apr</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake -GNinja -DCMAKE_INSTALL_PREFIX=%INSTALL% -DCMAKE_BUILD_TYPE=Release -DMIN_WINDOWS_VER=0x0600 -DAPR_HAVE_IPV6=ON -DAPR_INSTALL_PRIVATE_H=ON -DAPR_BUILD_TESTAPR=OFF -DINSTALL_PDB=OFF ..</span><br><span class="line">ninja</span><br><span class="line">ninja install</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/7e486ad7c06140b3a04bf91309bcdcdf.png#pic_center" alt="alt"></p>
+<h2 id="7-编译apr-util"><a href="#7-编译apr-util" class="headerlink" title="7. 编译apr-util"></a>7. 编译apr-util</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake -GNinja -DCMAKE_INSTALL_PREFIX=%INSTALL% -DOPENSSL_ROOT_DIR=%INSTALL% -DCMAKE_BUILD_TYPE=Release -DAPU_HAVE_CRYPTO=ON -DAPR_BUILD_TESTAPR=OFF -DINSTALL_PDB=OFF ..</span><br><span class="line">ninja</span><br><span class="line">ninja install</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/c36afc7ed3004624b38b148e22d9b176.png#pic_center" alt="alt"></p>
+<h2 id="8-编译httpd"><a href="#8-编译httpd" class="headerlink" title="8. 编译httpd"></a>8. 编译httpd</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake -G <span class="string">&quot;NMake Makefiles&quot;</span> -DCMAKE_PREFIX_PATH=%INSTALL% -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=%INSTALL% ..</span><br><span class="line">nmake</span><br><span class="line">nmake install</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/a5f61e0fdc274e03b2764361b595a3db.png#pic_center" alt="alt"></p>
+<h1 id="三、运行"><a href="#三、运行" class="headerlink" title="三、运行"></a>三、运行</h1><p>双击<code>bin\httpd.exe</code>即可运行<br>如果不改变安装目录，则不需要修改<code>conf\httpd.conf</code>中server root<br><img src="https://img-blog.csdnimg.cn/f48aa76cb8d9408aa420e8e5b248a5da.png#pic_center" alt="alt"></p>
+<h1 id="四、开启目录索引"><a href="#四、开启目录索引" class="headerlink" title="四、开启目录索引"></a>四、开启目录索引</h1><p>打开<code>conf\httpd.conf</code>，将第478行的注释去掉，重新打开运行<code>httpd.exe</code>即可看到效果<br><img src="https://img-blog.csdnimg.cn/85bbd5a586f442c782331adc5cc5078c.png#pic_center" alt="alt"></p>
+<p>如图：<br><img src="https://img-blog.csdnimg.cn/a530d22143664463b3c2b6d8f3bdb82a.png#pic_center" alt="alt"><br>编译好的Apache：<br><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1kBz3hIIFEhYuH8s3mhCS1g">https://pan.baidu.com/s/1kBz3hIIFEhYuH8s3mhCS1g</a> 提取码: 5xs8</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://wcyfszx.github.io/2022/12/05/Windows%E5%88%B6%E4%BD%9Cchromium%E4%BE%BF%E6%90%BA%E7%89%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="悠然的峰">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="悠然的峰's 技术博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 悠然的峰's 技术博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/12/05/Windows%E5%88%B6%E4%BD%9Cchromium%E4%BE%BF%E6%90%BA%E7%89%88/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-12-05 08:13:50 / 修改时间：07:52:16" itemprop="dateCreated datePublished" datetime="2022-12-05T08:13:50+08:00">2022-12-05</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>@<a href="Windows%E5%88%B6%E4%BD%9Cchromium%E4%BE%BF%E6%90%BA%E7%89%88">TOC</a><br>发布时间：2022.5，注意时效性</p>
+<h1 id="一、下载chromium"><a href="#一、下载chromium" class="headerlink" title="一、下载chromium"></a>一、下载chromium</h1><p>由于伟大的防火墙，所以官方的网站是上不去的<br>官方网站是这个：<a target="_blank" rel="noopener" href="https://www.chromium.org/getting-involved/download-chromium/">https://www.chromium.org/getting-involved/download-chromium/</a><br>上面有一堆链接，一个也不能用<br>这个能用：<a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/chromium-browser-snapshots/">https://npm.taobao.org/mirrors/chromium-browser-snapshots/</a><br><img src="https://img-blog.csdnimg.cn/beb6555f2d9d40c0b6427e65ac77d10d.png#pic_center" alt="alt"></p>
+<h1 id="二、制作"><a href="#二、制作" class="headerlink" title="二、制作"></a>二、制作</h1><p>解压下载得到的<code>chrome-win.zip</code>，里面放一个脚本，为<code>start.bat</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">start chrome.exe --user-data-dir=UserData</span><br></pre></td></tr></table></figure>
+<p>双击<code>start.bat</code>即可运行，用户信息放在根目录下的UserData目录下</p>
+<h1 id="三、美化"><a href="#三、美化" class="headerlink" title="三、美化"></a>三、美化</h1><p>本人是个完美主义者，瞅着不好看<br><img src="https://img-blog.csdnimg.cn/2fbed08556164d40b0c48f182d0357cb.png#pic_center" alt="alt"></p>
+<p>故写了个python启动器，然后使用pyinstaller打包成exe</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">filename = <span class="string">r&#x27;.\chrome.exe&#x27;</span></span><br><span class="line"><span class="keyword">if</span> os.path.exists(filename):</span><br><span class="line">    os.system(<span class="string">&quot;start chrome.exe --user-data-dir=UserData&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;chrome.exe not found!&quot;</span>)</span><br><span class="line">    time.sleep(<span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+<p>至于这个图标，由于本人是个大聪(懒)明(蛋)，使用7zip导出图标<br>使用7zip打开chrome.exe，右键就有，打开到chrome.exe.rsrc\1033\ICON\，找到最接近而不大于20KB的文件，可能会没有扩展名，至于为什么使用20KB的图标，是因为大的会报错<br><img src="https://img-blog.csdnimg.cn/8762b9628bd849cb8c5cc37c04f2b166.png#pic_center" alt="alt"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install pyinstaller <span class="comment">#安装pyinstaller</span></span><br><span class="line">pyinstaller -F start.py -i icon.ico <span class="comment">#打包</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/c6c5a8f8904248dea59f1ac07d0af0b0.png#pic_center" alt="alt"><br>双击即可运行<br>打开后是这样的：</p>
+<p><img src="https://img-blog.csdnimg.cn/1adf2609c82e41349f757eadbbe42e4a.png#pic_center" alt="alt"></p>
+<h1 id="四、打包"><a href="#四、打包" class="headerlink" title="四、打包"></a>四、打包</h1><p>把这个文件夹放在随便一个位置即可运行<br>这是我制作的：<br><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1qcGoQB59M4YmiLqw7TCjzQ">https://pan.baidu.com/s/1qcGoQB59M4YmiLqw7TCjzQ</a> 提取码: c2nd </p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://wcyfszx.github.io/2022/12/05/Windows%E7%BC%96%E8%AF%91python3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="悠然的峰">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="悠然的峰's 技术博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 悠然的峰's 技术博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/12/05/Windows%E7%BC%96%E8%AF%91python3/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-12-05 08:13:50 / 修改时间：07:51:57" itemprop="dateCreated datePublished" datetime="2022-12-05T08:13:50+08:00">2022-12-05</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>@<a href="Windows%E7%BC%96%E8%AF%91python3">TOC</a><br>发布时间：2022.5，注意时效性<br>系统环境：windows 10，vs 2019 buildtools<br>文末附下载</p>
+<h1 id="一、下载安装Git，7Zip"><a href="#一、下载安装Git，7Zip" class="headerlink" title="一、下载安装Git，7Zip"></a>一、下载安装Git，7Zip</h1><p><a target="_blank" rel="noopener" href="https://repo.huaweicloud.com/git-for-windows/">Git for Windows</a>，下载最新版就行<br><a target="_blank" rel="noopener" href="https://www.7-zip.org/">7Zip</a></p>
+<h1 id="二、下载python源码"><a href="#二、下载python源码" class="headerlink" title="二、下载python源码"></a>二、下载python源码</h1><p><a target="_blank" rel="noopener" href="https://repo.huaweicloud.com/python/">下载地址</a>，随便下载哪个都行<br>我下载的是Python-3.8.13.tgz<br>使用7zip解压压缩包，Windows自己好像不能解压tgz<br><img src="https://img-blog.csdnimg.cn/2cd6ea31a95440968a4d9306679d6813.png#pic_center" alt="alt"></p>
+<h1 id="三、修改python源码"><a href="#三、修改python源码" class="headerlink" title="三、修改python源码"></a>三、修改python源码</h1><p>打开PCbuild\get_external.py，加入如下语句</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> ssl</span><br><span class="line">ssl._create_default_https_context = ssl._create_unverified_context</span><br></pre></td></tr></table></figure>
+<p>由于可能会遇到ssl的问题，所以需要修改<br>如图：</p>
+<p><img src="https://img-blog.csdnimg.cn/a4510acdc3dc475bad54bbbd37b03d49.png#pic_center" alt="alt"></p>
+<h1 id="四、编译"><a href="#四、编译" class="headerlink" title="四、编译"></a>四、编译</h1><p>打开x64本机命令提示符，进入PCbuild</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">build.bat <span class="comment"># 编译32位python</span></span><br><span class="line">build.bat -p x64 <span class="comment"># 编译64位python</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/b011a2c9882a49f29c268467707881c7.png#pic_center" alt="alt"><br><img src="https://img-blog.csdnimg.cn/341cffd1a5ec44d0a6db75d5d814a84e.png#pic_center" alt="alt"><br>错误可以忽略<br>测试：输入python即可运行<br><img src="https://img-blog.csdnimg.cn/df8d2ce60dd74804b3dbbe834fa1d4df.png#pic_center" alt="alt"></p>
+<h1 id="五、建立python安装文件夹"><a href="#五、建立python安装文件夹" class="headerlink" title="五、建立python安装文件夹"></a>五、建立python安装文件夹</h1><p>找到一个安装版python的安装目录，目录里有啥就从编译的文件夹里复制出来<br>但注意有一个文件夹叫include，比较坑，不能直接复制，要找到叫<strong>pyconfig.h</strong>这个文件，复制到include文件夹里，再把pydtrace.d文件移除<br>如图：<br><img src="https://img-blog.csdnimg.cn/366950cb01e645408362340bca6dcdc7.png#pic_center" alt="alt"><br>这是我最后的结果：<br><img src="https://img-blog.csdnimg.cn/7599a3bc5eb44acb8e8f1be82aae1df8.png#pic_center" alt="alt"></p>
+<h1 id="六、一点小遗憾"><a href="#六、一点小遗憾" class="headerlink" title="六、一点小遗憾"></a>六、一点小遗憾</h1><p>这里没有编译帮助文档，我试过，但失败了，所以如上图没有Doc文件夹</p>
+<h1 id="七、安装pip"><a href="#七、安装pip" class="headerlink" title="七、安装pip"></a>七、安装pip</h1><p>这里不用使用get-pip.py，可以使用ensurepip</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m ensurepip</span><br></pre></td></tr></table></figure>
+<p>这个pip仍然有点坑，一旦安装后就无法移动该文件夹，否则pip.exe会无法使用<br>但也可以这样用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip</span><br></pre></td></tr></table></figure>
+<hr>
+<p>链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1oe1g5EIncvECQLfA9Gnqng">https://pan.baidu.com/s/1oe1g5EIncvECQLfA9Gnqng</a> 提取码: cjv8 </p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">悠然的峰</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
